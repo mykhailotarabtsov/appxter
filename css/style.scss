@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import './normalize.css';
+@import './layout.css';
+@import './components/_variables';
+@import './components/_header';
+@import './components/_about';
+@import './components/_introducing';
+@import './components/_apps__download';
+@import './components/_features';
+@import './components/_howitwork';
+@import './components/_appscreen';
+
+.ba-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.flex-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

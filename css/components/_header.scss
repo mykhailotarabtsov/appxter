@@ -1,0 +1,106 @@
+.header {
+  background: linear-gradient(to bottom left, rgba(1, 183, 112, 0.6), rgba(3, 162, 210, 0.6)),
+              url('../img/bg_header.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 930px;
+  min-height: 800px;
+  height: 100%;
+  position: relative;
+
+  .top__line {
+    // position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 5;
+
+    .top__line-wrap {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a {
+      margin: 0;
+      display: inline-block;
+    }
+    .top__line-nav {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: inline-block;
+
+      li {
+        display: inline-block;
+        color: #fff;
+
+        a {
+          color: inherit;
+          text-transform: uppercase;
+          text-decoration: none;
+          display: block;
+          padding: 10px 15px;
+          font-size: 0.9375rem;
+          border-radius: 10px;
+          transition: color 0.4s ease,
+                      background-color 0.4s ease;
+          cursor: pointer;
+
+          &:hover {
+            color: #56c5d2;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 70%;
+    text-align: center;
+
+    h1 {
+      font-size: 5rem;
+      line-height: 1.175em;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1.0625rem;
+      line-height: 2em;
+    }
+    .header__hero-btns {
+      margin-top: 75px;
+
+      button {
+        padding: 20px 45px;
+        text-transform: uppercase;
+        background-color: #fff;
+        border: 1px solid transparent;
+        outline: none;
+        border-radius: 10px;
+        font-size: 1.1875rem;
+        margin-right: 30px;
+        transition: background-color 0.4s ease;
+
+        span {
+          background: linear-gradient(45deg, rgba(1, 183, 112, 1), rgba(3, 162, 210, 1));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: rgba(1, 183, 112, 1);
+        }
+
+        &:hover {
+          background-color: transparent;
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+}

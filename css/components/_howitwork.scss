@@ -1,0 +1,37 @@
+.howitwork {
+	padding: 120px 0;
+	background: linear-gradient(to bottom left, rgba(1, 183, 112, 0.6), rgba(3, 162, 210, 0.6)),
+							url('../img/howitwork.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	text-align: center;
+
+	&__circle {
+		width: 130px;
+		height: 130px;
+		background: #fff;
+		border-radius: 50%;
+		display: inline-block;
+		position: relative;
+
+		&:after {
+			font-family: "Font Awesome 5 Solid";
+			content: '\f04b';		
+			display: none;	
+		}
+		svg {
+			font-size: 4rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #399a88;
+		}
+	}
+	h3 {
+		font-size: 3.125rem;
+		color: #fff;
+		text-transform: capitalize;
+		margin-top: 40px;
+		margin-bottom: 0;
+	}
+}

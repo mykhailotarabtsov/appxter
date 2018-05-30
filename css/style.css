@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
+@import url(./normalize.css);
+@import url(./layout.css);
+.header {
+  background: linear-gradient(to bottom left, rgba(1, 183, 112, 0.6), rgba(3, 162, 210, 0.6)), url("../img/bg_header.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 930px;
+  min-height: 800px;
+  height: 100%;
+  position: relative; }
+  .header .top__line {
+    width: 100%;
+    padding: 20px 0;
+    z-index: 5; }
+    .header .top__line .top__line-wrap {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .header .top__line a {
+      margin: 0;
+      display: inline-block; }
+    .header .top__line .top__line-nav {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: inline-block; }
+      .header .top__line .top__line-nav li {
+        display: inline-block;
+        color: #fff; }
+        .header .top__line .top__line-nav li a {
+          color: inherit;
+          text-transform: uppercase;
+          text-decoration: none;
+          display: block;
+          padding: 10px 15px;
+          font-size: 0.9375rem;
+          border-radius: 10px;
+          transition: color 0.4s ease, background-color 0.4s ease;
+          cursor: pointer; }
+          .header .top__line .top__line-nav li a:hover {
+            color: #56c5d2;
+            background-color: #fff; }
+  .header__hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 70%;
+    text-align: center; }
+    .header__hero h1 {
+      font-size: 5rem;
+      line-height: 1.175em;
+      text-transform: uppercase; }
+    .header__hero p {
+      font-size: 1.0625rem;
+      line-height: 2em; }
+    .header__hero .header__hero-btns {
+      margin-top: 75px; }
+      .header__hero .header__hero-btns button {
+        padding: 20px 45px;
+        text-transform: uppercase;
+        background-color: #fff;
+        border: 1px solid transparent;
+        outline: none;
+        border-radius: 10px;
+        font-size: 1.1875rem;
+        margin-right: 30px;
+        transition: background-color 0.4s ease; }
+        .header__hero .header__hero-btns button span {
+          background: linear-gradient(45deg, #01b770, #03a2d2);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: #01b770; }
+        .header__hero .header__hero-btns button:hover {
+          background-color: transparent;
+          border: 1px solid #fff; }
+
+.about {
+  padding: 50px 0;
+  background-color: #f5f7fb; }
+  .about .blocks-wrap {
+    text-align: center; }
+  .about .block-wrap {
+    width: 30%;
+    background-color: #4acfd9;
+    border-radius: 10px;
+    padding: 4px 1px;
+    display: inline-block;
+    margin-right: 30px; }
+    .about .block-wrap:last-child {
+      margin-right: 0; }
+    .about .block-wrap .block-item {
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      color: #4c5462;
+      padding: 45px 30px;
+      transition: transform 0.4s ease; }
+      .about .block-wrap .block-item h3 {
+        margin: 0;
+        font-size: 1.625rem;
+        text-transform: uppercase; }
+      .about .block-wrap .block-item img {
+        margin: 25px 0; }
+      .about .block-wrap .block-item p {
+        margin: 0;
+        font-size: 0.875rem;
+        line-height: 1.7142em; }
+    .about .block-wrap:hover .block-item {
+      transform: scale(1.01, 1.03); }
+
+.introducing {
+  padding: 75px 0; }
+  .introducing__top {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 90px; }
+    .introducing__top h1 {
+      color: #49ced8;
+      font-size: 2.1875rem;
+      text-transform: uppercase; }
+    .introducing__top p {
+      color: #4c5462;
+      font-size: 1rem;
+      line-height: 1.75em; }
+  .introducing__text {
+    width: 50%; }
+    .introducing__text h2 {
+      color: #49ced8;
+      font-size: 2.1875rem;
+      text-transform: uppercase; }
+    .introducing__text p {
+      color: #4c5462;
+      font-size: 1rem;
+      line-height: 1.75em; }
+
+.apps__download {
+  padding: 80px 0;
+  background-color: #4dcfda; }
+  .apps__download .apps-wrap {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin: 0 auto; }
+    .apps__download .apps-wrap .apps-wrap__item {
+      text-decoration: none;
+      display: flex;
+      font-size: 0;
+      border: 2px solid #fff;
+      padding: 5px;
+      margin-right: 45px;
+      border-radius: 10px;
+      text-align: center; }
+      .apps__download .apps-wrap .apps-wrap__item:last-child {
+        margin-right: 0; }
+      .apps__download .apps-wrap .apps-wrap__item .system {
+        font-size: 2.5rem;
+        color: #fff;
+        padding: 20px 25px;
+        display: inline-block;
+        border-radius: 10px 0 0 10px; }
+      .apps__download .apps-wrap .apps-wrap__item .dsc {
+        display: inline-block;
+        background-color: #fff;
+        padding: 20px 25px;
+        border-radius: 0 10px 10px 0; }
+        .apps__download .apps-wrap .apps-wrap__item .dsc span {
+          text-transform: uppercase;
+          display: block;
+          color: #4c5462;
+          font-size: 1.125rem; }
+        .apps__download .apps-wrap .apps-wrap__item .dsc span.dsc__google {
+          color: #9ace4f;
+          text-transform: capitalize;
+          margin-top: 5px; }
+        .apps__download .apps-wrap .apps-wrap__item .dsc span.dsc__windows {
+          color: #f87d2e;
+          text-transform: capitalize;
+          margin-top: 5px; }
+        .apps__download .apps-wrap .apps-wrap__item .dsc span.dsc__apple {
+          color: #3eb5d3;
+          text-transform: capitalize;
+          margin-top: 5px; }
+
+.features {
+  background-color: #f5f7fb;
+  text-align: center;
+  padding: 50px 0; }
+  .features__top-line {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 65px; }
+    .features__top-line h1 {
+      font-size: 2.1875rem;
+      color: #49ced8;
+      text-transform: uppercase; }
+    .features__top-line p {
+      font-size: 1rem;
+      line-height: 1.75em;
+      color: #4c5462; }
+  .features__dsc {
+    width: 33%; }
+    .features__dsc-item {
+      padding: 15px 20px;
+      background: #fff;
+      position: relative;
+      margin-bottom: 90px; }
+      .features__dsc-item:last-child {
+        margin-bottom: 0; }
+      .features__dsc-item h3 {
+        color: #49ced8;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        margin-top: 0; }
+      .features__dsc-item p {
+        font-size: 0.9375;
+        line-height: 1.733333333em;
+        color: #4c5462;
+        margin-bottom: 0; }
+      .features__dsc-item .bottom__border {
+        height: 2px;
+        width: 25%;
+        background: #49ced8;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+      .features__dsc-item__circle {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        background: #49ced8;
+        top: -35%;
+        left: -9%;
+        border-radius: 50%;
+        font-size: 2.5rem;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    .features__dsc.right-container .bottom__border {
+      right: initial;
+      left: 0; }
+    .features__dsc.right-container .features__dsc-item__circle {
+      left: initial;
+      right: -9%; }
+  .features__img {
+    width: 34%;
+    height: auto; }
+
+.howitwork {
+  padding: 120px 0;
+  background: linear-gradient(to bottom left, rgba(1, 183, 112, 0.6), rgba(3, 162, 210, 0.6)), url("../img/howitwork.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  text-align: center; }
+  .howitwork__circle {
+    width: 130px;
+    height: 130px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative; }
+    .howitwork__circle:after {
+      font-family: "Font Awesome 5 Solid";
+      content: '\f04b';
+      display: none; }
+    .howitwork__circle svg {
+      font-size: 4rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #399a88; }
+  .howitwork h3 {
+    font-size: 3.125rem;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 40px;
+    margin-bottom: 0; }
+
+.appscreen {
+  text-align: center;
+  padding: 65px 0; }
+  .appscreen__top-line {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 65px; }
+    .appscreen__top-line h1 {
+      font-size: 2.1875rem;
+      color: #49ced8;
+      text-transform: uppercase;
+      margin-top: 0; }
+    .appscreen__top-line p {
+      font-size: 1rem;
+      line-height: 1.75em;
+      color: #4c5462; }
+  .appscreen .slider__container {
+    width: 70%;
+    margin: 0 auto; }
+    .appscreen .slider__container .slick-track {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transform: translate3d(0, 0, 0) !important; }
+    .appscreen .slider__container .slider__item {
+      display: inline-block;
+      width: 23% !important; }
+      .appscreen .slider__container .slider__item.slick-current {
+        width: 30% !important; }
+      .appscreen .slider__container .slider__item img {
+        max-width: 100%;
+        width: 100%;
+        height: auto; }
+  .appscreen .slider__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    margin: 50px auto 0; }
+    .appscreen .slider__buttons .prev__button, .appscreen .slider__buttons .next__button {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #289ab2;
+      margin-right: 20px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.25rem;
+      cursor: pointer;
+      transition: color 0.3s ease; }
+      .appscreen .slider__buttons .prev__button:hover, .appscreen .slider__buttons .next__button:hover {
+        color: #fff; }
+    .appscreen .slider__buttons .next__button {
+      margin-right: 0;
+      margin-left: 20px; }
+    .appscreen .slider__buttons span {
+      display: block;
+      width: 2px;
+      height: 2.25rem;
+      background-color: #289ab2; }
+
+.ba-container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif; }
+
+.flex-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+/*# sourceMappingURL=style.css.map */
